@@ -178,7 +178,7 @@ download_package ()
 }
 
 if [ -z "$BUILD_DIR" ] ; then
-    BUILD_DIR=$TMPDIR/buildhost
+    panic "--build-out is required"
 fi
 
 bh_setup_build_dir $BUILD_DIR
