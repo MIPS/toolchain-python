@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 set -v
 if [ -n "$1" ]; then
     CCINSTALL=$($1 -print-search-dirs | head -1 | cut -d' ' -f2)
